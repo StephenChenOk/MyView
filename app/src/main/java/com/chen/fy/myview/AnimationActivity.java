@@ -17,9 +17,8 @@ public class AnimationActivity extends AppCompatActivity {
         setContentView(R.layout.animation_demo);
 
         imageView = findViewById(R.id.animationDemo);
-        AlphaAnimation alphaAnimation = new AlphaAnimation(0.3f, 1.0f);
-        //设置动画时间
-        alphaAnimation.setDuration(3000);
+        AlphaAnimation alphaAnimation = new AlphaAnimation(0.5f, 1.0f);   //图片开始的透明度  结束的透明度
+        alphaAnimation.setDuration(0);     //设置动画时间
         imageView.startAnimation(alphaAnimation);
         alphaAnimation.setAnimationListener(new Animation.AnimationListener() {
             @Override

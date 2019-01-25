@@ -1,9 +1,15 @@
 package com.chen.fy.myview;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
@@ -29,7 +35,7 @@ public class DrawView extends View {
     }
 
     @Override
-    protected void onDraw(Canvas canvas) {
+    protected void onDraw(Canvas canvas) {   // canvas 画布
         super.onDraw(canvas);
 
         //需要手动设置padding熟悉,否则padding不会生效
@@ -46,8 +52,15 @@ public class DrawView extends View {
         //设置圆的半径 宽高最小值的2分之1
         int r = Math.min(width, height) / 2;
 
+        @SuppressLint("DrawAllocation") Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.user_2,null);
+
+
         //画圆
-        canvas.drawCircle(paddingLeft + width / 2, paddingRight + height / 2, r, paint);
+       // canvas.drawCircle(paddingLeft + width / 2, paddingRight + height / 2, r, paint);    //圆
+        //canvas.drawBitmap(bitmap,0,0,paint);    //图片
+//        @SuppressLint("DrawAllocation") Rect rect = new Rect(100,100,500,500);  // 创建一个矩形  分别是距离左边上边右边下边的距离
+//        canvas.drawRect(rect,paint);
+        canvas.drawText("陈一生",100,300,paint);
     }
 
     //初始化画笔
@@ -57,8 +70,10 @@ public class DrawView extends View {
         //画笔颜色设置
         paint.setColor(Color.RED);
         //画笔宽度设置 10px
-        paint.setStrokeWidth(10);
+        paint.setStrokeWidth(1);
+        //画笔字体大小
+        paint.setTextSize(50f);
         //画笔模式设置为填充
-        paint.setStyle(Paint.Style.FILL);
+        paint.setStyle(Paint.Style.STROKE);
     }
 }

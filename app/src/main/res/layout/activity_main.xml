@@ -5,8 +5,8 @@
 
     <!--自定义组件名: 包名+自定义组件类名-->
     <com.chen.fy.myview.DrawView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:padding="10dp"/>
 
 </LinearLayout>
