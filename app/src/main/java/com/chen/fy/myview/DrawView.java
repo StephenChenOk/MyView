@@ -2,17 +2,26 @@ package com.chen.fy.myview;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Rect;
-import android.graphics.drawable.Drawable;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
+
+/**
+ * 一个自定义View从创建到显示过程中的主要方法
+ * //1.构造方法实例化
+ * //2.测量-onMeasure()
+ *     如果当前view是一个viewGroup,则还有义务测量孩子
+ *     孩子又建议权
+ * //3.指定位置 onLayout()
+ *     指定控件的位置,一般view不用重写这个方法,viewGroup的时候才需要
+ * //4.绘制视图 onDraw()
+ *     根据上面两个方法的参数进行绘制
+ */
 
 public class DrawView extends View {
 
