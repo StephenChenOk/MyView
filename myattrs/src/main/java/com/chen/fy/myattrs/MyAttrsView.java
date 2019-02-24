@@ -46,8 +46,8 @@ public class MyAttrsView extends View {
         super.onDraw(canvas);
         Paint paint = new Paint();
         paint.setTextSize(30);
-        canvas.drawText(name+"----->"+age,0,0,paint);
-        canvas.drawBitmap(bg,0,0,paint);
+        canvas.drawText(name+"----->"+age,200,40,paint);
+        canvas.drawBitmap(bg,100,100,paint);
 
     }
 }
