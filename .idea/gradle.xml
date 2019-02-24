@@ -10,7 +10,9 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/dropdownbox" />
+            <option value="$PROJECT_DIR$/myattrs" />
             <option value="$PROJECT_DIR$/mybanner" />
+            <option value="$PROJECT_DIR$/myswitch" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

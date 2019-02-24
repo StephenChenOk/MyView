@@ -1,1 +1,1 @@
-include ':app', ':mybanner', ':dropdownbox'
+include ':app', ':mybanner', ':dropdownbox', ':myswitch', ':myattrs'
