@@ -38,7 +38,8 @@ public class MyAttrsView extends View {
                     break;
             }
         }
-
+        //回收
+        typedArray.recycle();
     }
 
     @Override

@@ -16,7 +16,7 @@ import android.view.View;
  * //1.构造方法实例化
  * //2.测量-onMeasure()
  *     如果当前view是一个viewGroup,则还有义务测量孩子
- *     孩子又建议权
+ *     孩子有建议权
  * //3.指定位置 onLayout()
  *     指定控件的位置,一般view不用重写这个方法,viewGroup的时候才需要
  * //4.绘制视图 onDraw()

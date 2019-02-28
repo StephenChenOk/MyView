@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/myattrs" />
             <option value="$PROJECT_DIR$/mybanner" />
             <option value="$PROJECT_DIR$/myswitch" />
+            <option value="$PROJECT_DIR$/myviewpager" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
