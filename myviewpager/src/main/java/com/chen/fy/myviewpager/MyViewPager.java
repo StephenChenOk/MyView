@@ -12,7 +12,7 @@ public class MyViewPager extends ViewGroup {
 
     /**
      * 手势识别器
-     * 1.定义出俩
+     * 1.定义
      * 2.进行实例化,并将索要用到的方法进行重写
      * 3.在onTouchEvent()方法中把事件回传给手势识别器
      */

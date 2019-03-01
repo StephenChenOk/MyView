@@ -1,1 +1,1 @@
-include ':app', ':mybanner', ':dropdownbox', ':myswitch', ':myattrs', ':myviewpager'
+include ':app', ':mybanner', ':dropdownbox', ':myswitch', ':myattrs', ':myviewpager', ':contactinterface'
